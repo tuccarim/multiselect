@@ -23,6 +23,7 @@ class _SelectRow extends StatelessWidget {
     return Row(
       children: [
         Checkbox(
+            activeColor: Colors.green,
             value: selected,
             onChanged: (x) {
               onChange(x!);
@@ -103,6 +104,7 @@ class _DropDownMultiSelectState extends State<DropDownMultiSelect> {
           Align(
             alignment: Alignment.centerLeft,
             child: DropdownButtonFormField<String>(
+              icon: Icon(Icons.arrow_downward),
               decoration: widget.decoration != null
                   ? widget.decoration
                   : InputDecoration(
