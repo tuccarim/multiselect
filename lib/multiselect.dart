@@ -87,7 +87,7 @@ class _DropDownMultiSelectState extends State<DropDownMultiSelect> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 70,
       child: Stack(
         children: [
           _theState.rebuilder(() => widget.childBuilder != null
